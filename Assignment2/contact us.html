@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; 
+        }
+        header {
+            background-color: #ffffff;
+            color: #333; 
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+        }
+        header img {
+            max-height: 200px; 
+            margin-right: 100px; 
+        }
+        nav {
+            margin-left: auto; 
+        }
+        nav a {
+            color: #000000;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+            margin-top: auto; 
+        }
+        .content {
+            display: flex;
+            flex-direction: row; 
+            justify-content: space-between; 
+            align-items: flex-start; 
+            flex-grow: 1; 
+            padding: 20px;
+        }
+        .contact-info {
+            width: 40%; 
+            background-color: #1e2c4e; 
+            color: #fff; 
+            padding: 20px;
+            height: 352px;
+            margin-left: 46px;
+            position: relative; 
+        }
+        .contact-info .social-media {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .social-media a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 24px;
+        }
+        .contact-form {
+            width: 50%; 
+            padding: 20px;
+            border: 2px solid #1e2c4e; 
+            margin-right: 48px;
+        }
+        .title {
+            font-size: 24px; 
+            margin-bottom: 20px; 
+        }
+        p {
+            font-size: 16px; 
+            line-height: 1.6; 
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #1e2c4e;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="IMG_1790.PNG" alt="Logo">
+        <nav>
+            <a href="home page.html">Home</a>
+            <a href="about us.html">About</a>
+            <a href="Service page.html">Services</a>
+            <a href="contact us.html">Contact</a>
+        </nav>
+    </header>
+    <br><br><br><br><br><br>
+    <div class="content">
+        <div class="contact-info">
+            <h2 class="title">Contact Information</h2>
+            <p>Email: contact@example.com</p>
+            <p>Phone: +123456789</p>
+            <p>Address: 123 Street, City, Country</p>
+            <div class="social-media">
+                <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="contact-form">
+            <h2 class="title">Contact Us</h2>
+            <form action="#" method="post">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" required></textarea><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 VerseCraft AI. All rights reserved.</p>
+    </footer>
+</body>
+</html>
